@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aishwarya | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f8a450d620.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header id="header">
+    <nav class="container">
+      <div class="logo">Aishwarya Kkw</div>
+      <i id="open-icon" class="fa-solid fa-bars" onclick="openmenu()"></i>
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i id="close-icon" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+    </nav>
+    <div class="header-text container">
+      <h1>Hey there!<br> I'm <span>Aishwarya Kankanwadi</span></h1>
+      <p class="title">Aspiring Data Engineer</p>
+      <div class="desc-box">
+        <p class="desc">
+          System Engineer turned Aspiring Data Engineer
+          <i class="fa-solid fa-code"></i><br>
+          Passionate about data pipelines, cloud platforms, and building scalable data solutions.
+        </p>
+        <div class="tech-icons">
+          <i class="fa-brands fa-python"></i>
+          <i class="fa-solid fa-database"></i>
+          <i class="fa-solid fa-code-branch"></i>
+          <i class="fa-solid fa-cloud"></i>
+          <i class="fa-solid fa-code"></i>
+          <i class="fa-solid fa-server"></i>
+        </div>
+        <a href="mailto:xxx@gmail.com" class="connect-btn">Let’s Connect</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="About" class="container">
+    <h1 class="sub-title">About Me</h1>
+    <div class="info-box">
+      <p class="about-text">
+        I am an Aspiring Data Engineer with 2 years of experience in infrastructure and software engineering. 
+        Skilled in Python, SQL, and database management, with hands-on expertise in AWS and Azure cloud platforms.
+        I have worked on ETL workflows, data pipelines, and cloud-based solutions, focusing on scalability, performance, and reliability.
+      </p>
+      <p class="goal">
+        My goal is to leverage my background in coding and cloud technologies to design and implement impactful 
+        data engineering solutions that enable smarter decision-making.
+      </p>
+      <div class="tab-titles">
+        <p class="tab-links active-links" onclick="opentab('skills')">SKILLS</p>
+        <p class="tab-links" onclick="opentab('experience')">WORK EXPERIENCE</p>
+        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+      </div>
+
+      <!-- Skills Tab -->
+      <div class="tab-contents active-tab" id="skills">
+        <div class="skills-row">
+          <div>
+            <p class="skills">Programming & Data</p>
+            <div class="skill-box"><p>Python</p><div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div></div>
+            <div class="skill-box"><p>SQL</p><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div></div>
+            
+          </div>
+          <div>
+            <p class="skills">Web Technologies</p>
+            <div class="skill-box"><p>HTML & CSS</p><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div></div>
+            <div class="skill-box"><p>ReactJS</p><div class="skill-bar"><div class="skill-level" style="width: 50%;"></div></div></div>
+          </div>
+          <div>
+            <p class="skills">Cloud Platforms</p>
+            <div class="skill-box"><p>AWS</p><div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div></div>
+            <div class="skill-box"><p>Azure</p><div class="skill-bar"><div class="skill-level" style="width: 65%;"></div></div></div>
+            <p class="skills">Infrastructure</p>
+            <div class="skill-box"><p>Active Directory</p><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div></div>
+            <div class="skill-box"><p>VMware / Server Admin</p><div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Tab -->
+      <div class="tab-contents" id="experience">
+        <ul>
+          <li>
+            <span>Stratogent Technology Services</span>
+            <p id="comp">System Engineer</p>
+            <p id="comp">2023 – Current</p>
+            <p id="exp">
+              Worked on Active Directory, server administration, Azure, AWS, and vulnerability management 
+              for clients such as IGMBio, VIR, Caribou, Si-bone and Nevro
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Education Tab -->
+      <div class="tab-contents" id="education">
+        <ul>
+          <li>
+            <span>Bachelor of Engineering (B.E.)</span>
+            <p id="clg"> Computer Science</p>
+            <p id="clg">May 2023</p>
+            <p id="clg">8.14 Cgpa</p>
+          </li>
+          <li>
+            <span>Master of Technology (M.Tech)</span>
+            <p id="clg"> Software Engineering</p>
+            <p id="clg">Pursuing</p>
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="Projects" class="container">
+    <h1 class="sub-title">My Works</h1>
+    <div class="projects-list">
+      <div>
+        <i class="fa-solid fa-database"></i>
+        <h2>JSON-to-MongoDB-ETL-Pipeline</h2>
+        <p>
+          This mini-project demonstrates a simple ETL pipeline using Python and MongoDB Atlas. Transform sample fitness orders data and generate analytics.<br>
+          <span class="tech-stack">Tech: Python, MongoDB</span>
+        </p>
+      </div>
+      <div>
+        <i class="fa-solid fa-database"></i>
+        <h2>ETL-Pipeline-Mini-Project</h2>
+        <p>
+          Python and Pandas based ETL pipeline to process Excel data, clean and aggregate, and store in SQLite. Showcases data-to-database workflow.<br>
+          <span class="tech-stack">Tech: Python, Pandas, SQLite</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <div class="contact-flex">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="info">
+          <p><i class="fa-solid fa-envelope"></i> xxxx</p>
+          <p><i class="fa-solid fa-phone"></i> xxxxxxxxxx</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/aishwarya-kankanwadi-0ba216237/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/AishwaryaKkw"><i class="fa-brands fa-github"></i></a>
+        </div>
+       <!-- <a href="Images/xxxx.pdf" download class="btn btn2">Download CV</a>-->
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email ID" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Send</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Aishwarya Kankanwadi</p>
+    </div>
+  </section>
+  
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-links");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-links");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemeu = document.getElementById("sidemenu");
+    var openIcon = document.getElementById("open-icon");
+    var closeIcon = document.getElementById("close-icon");
+
+    function openmenu() {
+      sidemeu.style.right = "0";
+      openIcon.style.display = "none";
+      closeIcon.style.display = "block";
+    }
+
+    function closemenu() {
+      sidemeu.style.right = "-150px";
+      openIcon.style.display = "block";
+      closeIcon.style.display = "none";
+    }
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzfhNIn_fZO1jw923JqxybYr8TAkCl3hQ3_rZPvYhX5SzC8OvRLkGFpLrgYt6a7ydJ4/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById('msg');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully!";
+          setTimeout(() => msg.innerHTML = "", 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
+
+
+</body>
+</html>
